@@ -45,6 +45,7 @@ function App() {
         <InfoBox title="Coronavirus Cases" cases={123} total={12342} />
         <InfoBox title="Recovered" cases={123} total={12342} />
         <InfoBox title="Deaths" cases={123} total={12342} />
+        <InfoBox title="Deaths" cases={123} total={12342} />
       </div>
     </div>
   );
