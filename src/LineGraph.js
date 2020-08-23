@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
 import numeral from "numeral";
+import "./App.css";
 
 const options = {
   legend: {
@@ -62,7 +63,6 @@ function LineGraph({ casesType = "cases" }) {
       }
       lastDataPoint = data[casesType][date];
     }
-    console.log("chartData", chartData);
     return chartData;
   };
 
@@ -80,7 +80,7 @@ function LineGraph({ casesType = "cases" }) {
   }, [casesType]);
 
   return (
-    <div>
+    <div className="app__graph">
       {data?.length > 0 && (
         <Line
           options={options}
